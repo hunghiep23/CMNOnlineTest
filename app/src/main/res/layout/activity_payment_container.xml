@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".feature.payment.PaymentContainerActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_background_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/actionbar_background" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPayment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@android:color/transparent"
+        app:contentInsetStart="0dp">
+
+        <include layout="@layout/layout_actionbar" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/flPaymentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llNavigation"
+        android:layout_below="@id/toolbarPayment" />
+
+    <LinearLayout
+        android:id="@+id/llNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/home_parent_margin"
+        android:layout_marginRight="@dimen/home_parent_margin"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_gradient_primary_button"
+            android:text="@string/next"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginLeft="@dimen/home_parent_margin"
+            android:layout_marginRight="@dimen/home_parent_margin"/>
+
+        <Button
+            android:id="@+id/btnBackToHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_white_button"
+            android:text="@string/payment_back_to_home"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginLeft="@dimen/home_parent_margin"
+            android:layout_marginRight="@dimen/home_parent_margin"/>
+    </LinearLayout>
+</RelativeLayout>

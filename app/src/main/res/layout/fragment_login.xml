@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/home_parent_margin"
+    tools:context=".feature.login.LoginFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/home_parent_margin"
+        app:contentPadding="@dimen/home_parent_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_phone"
+                android:textColor="@color/colorBack" />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/home_parent_half_margin"
+                android:background="@drawable/background_edittext"
+                android:hint="@string/login_phone_hint"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_password"
+                android:textColor="@color/colorBack" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_edittext"
+                android:hint="@string/login_password_hint"
+                android:imeOptions="actionDone"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/home_parent_half_margin"
+                android:text="@string/login_forgot_password"
+                android:textColor="@color/colorOrange" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/home_parent_margin"
+        android:layout_marginRight="@dimen/home_parent_margin"
+        android:layout_marginBottom="@dimen/home_parent_half_margin"
+        android:background="@drawable/background_gradient_primary_button"
+        android:text="@string/login"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/login_does_not_have_account"
+        android:textColor="@color/colorDisableView"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/login_register_now"
+        android:textAllCaps="true"
+        android:textColor="@color/colorOrange"
+        android:textStyle="bold" />
+</LinearLayout>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_title">17sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="actionbar_background_height">130dp</dimen>
+    <dimen name="image_view_small_size">40dp</dimen>
+    <dimen name="image_view_size">70dp</dimen>
+
+    <dimen name="home_parent_double_margin">40dp</dimen>
+    <dimen name="home_parent_margin">20dp</dimen>
+    <dimen name="home_parent_half_margin">10dp</dimen>
+
+    <dimen name="circular_progressbar_thinkness">3dp</dimen>
+    <dimen name="payment_progressbar_size">50dp</dimen>
+    <dimen name="payment_progressbar_padding">10dp</dimen>
+</resources>

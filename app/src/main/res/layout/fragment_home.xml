@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/home_parent_margin"
+    tools:context=".feature.main.home.HomeFragment">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/navigation_home"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/home_parent_margin"
+            android:textColor="@color/colorPrimary"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

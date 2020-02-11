@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".feature.main.MainActivity">
+    <RelativeLayout
+        android:id="@+id/rlActionbarBackground"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:animateLayoutChanges="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/actionbar_background"
+            android:layout_above="@id/vSpacing"/>
+        <View
+            android:id="@+id/vSpacing"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpHomeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navMain" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navMain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white" />
+
+
+</RelativeLayout>

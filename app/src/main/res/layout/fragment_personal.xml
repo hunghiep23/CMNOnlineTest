@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feature.main.personalinfo.PersonalFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/home_parent_margin"
+        android:layout_marginTop="@dimen/home_parent_double_margin"
+        android:layout_marginEnd="@dimen/home_parent_margin"
+        android:layout_marginBottom="@dimen/home_parent_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/image_view_size"
+            android:layout_height="@dimen/image_view_size"
+            android:src="@drawable/ic_pizza" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/home_parent_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Nguyễn Xuân Đường"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="0983912849"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/home_parent_margin"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/home_parent_margin">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/home_parent_half_margin"
+                    android:layout_weight="1"
+                    app:contentPadding="@dimen/home_parent_margin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/image_view_size"
+                            android:layout_height="@dimen/image_view_size"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/home_parent_half_margin"
+                            android:src="@drawable/ic_bill" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/personal_order_history" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/home_parent_half_margin"
+                    android:layout_weight="1"
+                    app:contentPadding="@dimen/home_parent_margin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/image_view_size"
+                            android:layout_height="@dimen/image_view_size"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/home_parent_half_margin"
+                            android:src="@drawable/ic_coupon" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/home_parent_half_margin"
+                            android:gravity="center_horizontal"
+                            android:text="@string/personal_coupon" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/home_parent_margin"
+                app:contentPadding="@dimen/home_parent_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/home_parent_margin">
+
+                        <ImageView
+                            android:id="@+id/imv1"
+                            android:layout_width="@dimen/image_view_small_size"
+                            android:layout_height="@dimen/image_view_small_size"
+                            android:layout_marginEnd="@dimen/home_parent_half_margin"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_pizza" />
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/imv1"
+                            android:gravity="center_vertical"
+                            android:text="Menu 1" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imv2"
+                            android:layout_width="@dimen/image_view_small_size"
+                            android:layout_height="@dimen/image_view_small_size"
+                            android:layout_marginEnd="@dimen/home_parent_half_margin"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_pizza" />
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/imv2"
+                            android:gravity="center_vertical"
+                            android:text="Menu 2" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/home_parent_margin"
+                android:background="@drawable/background_white_button"
+                android:text="@string/personal_logout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

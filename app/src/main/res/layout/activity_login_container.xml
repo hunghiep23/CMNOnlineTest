@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".feature.login.LoginContainerActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_background_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/actionbar_background" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@android:color/transparent"
+        app:contentInsetStart="0dp">
+
+        <include layout="@layout/layout_actionbar" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/flLoginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLogin"/>
+
+</RelativeLayout>

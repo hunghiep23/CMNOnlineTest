@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressBarFirst"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/payment_progressbar_size"
+                android:layout_height="@dimen/payment_progressbar_size"
+                android:background="@drawable/circle_shape"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:visibility="visible">
+
+            </ProgressBar>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/progressBarFirst"
+                android:layout_alignTop="@+id/progressBarFirst"
+                android:layout_alignEnd="@+id/progressBarFirst"
+                android:layout_alignBottom="@id/progressBarFirst"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_pizza" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorDisableView" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressBarSecond"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/payment_progressbar_size"
+                android:layout_height="@dimen/payment_progressbar_size"
+                android:background="@drawable/circle_shape"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:visibility="visible">
+
+            </ProgressBar>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/progressBarSecond"
+                android:layout_alignTop="@+id/progressBarSecond"
+                android:layout_alignEnd="@+id/progressBarSecond"
+                android:layout_alignBottom="@id/progressBarSecond"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_pizza" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorDisableView" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressBarLast"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/payment_progressbar_size"
+                android:layout_height="@dimen/payment_progressbar_size"
+                android:background="@drawable/circle_shape"
+                android:indeterminate="false"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:visibility="visible">
+
+            </ProgressBar>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/progressBarLast"
+                android:layout_alignTop="@+id/progressBarLast"
+                android:layout_alignEnd="@+id/progressBarLast"
+                android:layout_alignBottom="@id/progressBarLast"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_pizza" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="Bước 1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="Bước 2" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="Bước 3" />
+    </LinearLayout>
+</LinearLayout>
